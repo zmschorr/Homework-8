@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: ADvanced Lists</title>
+    <style>
+        #codeBox {
+            border: 1px solid black;
+            background-color: rgb(230, 230, 230);
+            float: right;
+            width: 400px;
+            margin: 0 2rem;
+        }
+        
+        #codeBox::before {
+            content: "Code Box";
+            background-color: seaGreen;
+            display: block;
+            border-bottom: 1px solid black;
+            padding: 0.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        
+        #codeBox li {
+            background-color: mediumSeaGreen;
+            list-style-type: none;
+            border-top: 1px solid white;
+            border-bottom: 1px solid black;
+            padding: 8px 10px;
+            width: 80%;
+            position: relative;
+        }
+        
+        #addBtn {
+            background-color: white;
+            color: seaGreen;
+            padding: 5px 10px;
+            border: 1px solid seaGreen;
+            border-radius: 5px;
+            position: relative;
+            left: 40px;
+            margin-bottom: 20px;
+            box-shadow: 1px 1px 2px black;
+        }
+        
+        #addBtn:active {
+            box-shadow: 0 0 0 black;
+        }
+        
+        section div {
+            display: none;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            padding: 10px;
+            background-image: linear-gradient( rgb(220, 220, 220) 60%, rgb(200, 200, 200));
+            border: 1px solid gray;
+            margin: 0;
+        }
+        
+        h2:hover {
+            cursor: pointer;
+        }
+        
+        img {
+            height: 100px;
+            float: left;
+            margin: 0 20px 20px 0;
+        }
+        
+        .listIcon {
+            height: 25px;
+            width: auto;
+            color: white;
+            position: absolute;
+            right: -15px;
+            top: 4px;
+        }
+        
+        code {
+            display: block;
+            background-color: rgb(230, 230, 230);
+            padding: 10px;
+            border: 1px solid gray;
+            margin: 20px 40px;
+        }
+        
+        .yourWork:before {
+            content: "INSTRUCTIONS: ";
+            font-weight: bold;
+        }
+        
+        .yourWork {
+            background-color: tomato;
+            padding: 10px;
+            font-style: italic;
+            margin: 30px 10px;
+        }
+        
+        .selected {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="codeBox">
+        <ul>
+            <li>Eggs</li>
+            <li>Milk</li>
+            <li>Bread</li>
+        </ul>
+        <input type="button" value="Add Item" id="addBtn" />
+    </div>
+    <main id="instructions">
+        <h1>Advanced List</h1>
+        <p>For this list, you will create a javascript list that will do the following:</p>
+        <ul>
+            <li>Add Items</li>
+            <li>Remove Items</li>
+            <li>Gray out selected items</li>
+        </ul>
+        <p>Most of the code has been done for you; A list and add item button has been created and the add item button is functional. Test it out.</p>
+        <p>You are now responsible for adding the code outlined in this tutorial. You will add an icon to each item and to each item added to the list.</p>
+        <p>Click on the gray headings below to reveal each step.</p>
+
+        <!-- (This section stays the same, nothing changed) -->
+
+        <section>
+            <h2>Add Icon to Existing Items</h2>
+            <div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/27019/trashcanIcon.png">
+                <p>I have added a trashcan icon to this page...</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Add Icons to New Items</h2>
+            <div>
+                <p>Now you need to add the trash icon to new items...</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Trash or Gray Out Items</h2>
+            <div>
+                <p>We are going to make two changes possible...</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reinstate Item</h2>
+            <div>
+                <p>Write the code that will check...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- your external JS file -->
+    <script src="hw8.js"></script>
+
+</body>
+
+</html>
